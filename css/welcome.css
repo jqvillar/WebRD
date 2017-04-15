@@ -8,8 +8,6 @@ and open the template in the editor.
     Author     : Janine
 */
 
-
-
 body{
     background: url(../images/Free.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -20,7 +18,6 @@ body{
 }
 
 #cover{
-    height: 100%;
     padding: 0;
     margin: 0;
     display: -webkit-box;
@@ -37,74 +34,9 @@ body{
     border-color: green;*/
 }
 
-
 .flex-item{
     width: 100%;
     /*
     border: solid 5px;
     border-color: purple;*/
 }
-
-    
-/*********************
-    MEDIA QUERIES
-*********************/    
-
-    /*
-    @media only screen and (min-width:960px){styles for browsers larger than 960px; 
-    }
-    */
-    
-    
-    @media only screen and (min-width:1080px){/* styles for browsers larger than 1080px; */
-
-    }
-    
-    @media only screen and (min-width: 1260px){/* styles for browsers larger than 1260px; */
-        
-    }
-
-    @media only screen and (min-width:1400px){/* styles for browsers larger than 1440px; */
-        
-        .intro-container{
-            margin-top: 15%;
-        }
-            .titles{
-                font-size: 700%;
-            }
-
-            .general-text{
-                font-size: 300%;
-            }
-
-        .social-icons{
-            margin-top: 15%;
-        }    
-            .social-icons a img{
-                margin-left: 2%;
-                margin-bottom: 1%;
-            }
-    }
-    
-    @media only screen and (min-width:2000px){/* for sumo sized (mac) screens */
-        
-    }
-    
-    @media only screen and (max-device-width:480px){/* styles for mobile browsers smaller than 480px; (iPhone) */
-
-    }
-    
-    @media only screen and (device-width:768px){/* default iPad screens */
-        
-
-    }
-    
-    
-    /* different techniques for iPad screening */
-    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-      /* For portrait layouts only */
-    }
-
-    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-      /* For landscape layouts only */
-    }    

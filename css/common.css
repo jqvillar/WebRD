@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : Apr 10, 2017, 3:44:11 PM
     Author     : Janine
 */
+
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
 
@@ -14,20 +15,65 @@ html, body{
     height: 100%;
 }
 
-/*Navigation*/
+/******************
+    Navigation
+******************/
+
+.flex-nav{
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 ul{
     list-style-type: none;
+    padding: 0;
+    width: 100%;
 }
     li{
         display: inline;
         text-decoration: none;
+        float:right;
     }
 
         li a{
             display: inline-block;
+            font-family: Century Gothic;
+        }
+        
+        /* unvisited link */
+        li a:link {
+            color: #000;
+            text-decoration: none;
         }
 
-/* TEXT */        
+        /* visited link */
+        li a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        li a:hover {
+            color: #9be0f2;
+        }
+
+        /* selected link */
+        li a:active {
+            color: blue;
+        }
+
+
+/******************
+       Text
+******************/       
 .titles{
     font-family: Century Gothic;
     font-weight: bold;
@@ -38,6 +84,9 @@ ul{
     font-family: 'PT Serif';
 }
 
+/******************
+   Social Icons
+******************/
 .social-icons a img{
     display: inline;
 }
