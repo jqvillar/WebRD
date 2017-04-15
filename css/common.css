@@ -57,7 +57,7 @@ ul{
 
         /* visited link */
         li a:visited {
-            color: green;
+            color: #000;
         }
 
         /* mouse over link */
