@@ -62,7 +62,7 @@ ul{
 
         /* mouse over link */
         li a:hover {
-            color: #9be0f2;
+            color: #e50977;
         }
 
         /* selected link */
@@ -86,7 +86,12 @@ ul{
 
 /******************
    Social Icons
+        LOGO
 ******************/
 .social-icons a img{
     display: inline;
+}
+
+#logo{
+    margin-left: 1.5%;
 }
