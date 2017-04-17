@@ -40,3 +40,40 @@ body{
     border: solid 5px;
     border-color: purple;*/
 }
+
+/**************
+    OVERLAY
+***************/
+.flex-overlay {
+  display: -webkit-flex;
+  display: flex;
+  /*display:none;*/
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+.overlay-flex-item {
+  flex: 1;
+}
+
+/*Panel colors*/
+
+#home {
+  background-color: #ff9728;
+}
+
+#about {
+  background-color: #ff5689;
+}
+
+#projects {
+  background-color: #4cd8ff;
+}
+
+#contact {
+  background-color: #25f7e2;
+}

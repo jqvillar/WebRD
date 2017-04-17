@@ -29,11 +29,11 @@ and open the template in the editor.
         .intro-container{
             margin-top: 10%;
         }
-            .titles{
+            .titles#main{
                 font-size: 580%;
             }
 
-            .general-text{
+            .general-text#aspiration{
                 font-size: 257%;
             }
 
@@ -63,11 +63,11 @@ and open the template in the editor.
         .intro-container{
             margin-top: 11%;
         }
-            .titles{
+            .titles#main{
                 font-size: 700%;
             }
 
-            .general-text{
+            .general-text#aspiration{
                 font-size: 300%;
             }
 
