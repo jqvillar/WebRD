@@ -38,6 +38,10 @@ html,body {
     justify-content: space-between;
 }
 
+.flex-nav-item #hamburger{
+    width: 70%;
+}
+
 /*******************
     Nav - Overlay
 ********************/
@@ -110,5 +114,5 @@ html,body {
 }
 
 #logo{
-    margin-left: 1.5%;
+    margin-left: 30%;
 }
