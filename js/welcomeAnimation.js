@@ -13,7 +13,7 @@ $(function(){
     
     $welcomeBG.add($nav).add($intro).add($socialIcons).toggle();
     
-    $welcomeBG.add($intro).fadeIn(3000);
-    $nav.add($socialIcons).fadeIn(3500);
+    $welcomeBG.add($intro).fadeIn(2000);
+    $nav.add($socialIcons).fadeIn(2500);
     
 });
