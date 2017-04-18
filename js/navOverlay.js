@@ -8,17 +8,16 @@
 $(function() {
   //chache DOM Elements
   var $overlayNav = $('.flex-overlay');
-  var $nav = $('.flex-nav');
   var $hamburger = $('#hamburger');
-  var $cover = $('#cover');
 
   var $panels = $('#home, #about, #projects, #contact');
   var $panelTitles = $('#home .titles, #about .titles, #projects .titles, #contact .titles');
   var $hiddenDescription = $('.hidden-description');
   var $hiddenDestination = $('.hidden-destination');
+  
   /* Hide overlay on load */
   $overlayNav.add($panels).add($panelTitles).add($hiddenDescription).add($hiddenDestination).toggle();
-
+  
   /* Functions */
   function panelHover() {
     $('.panel').hover(function() {
@@ -27,16 +26,23 @@ $(function() {
   }
   
   function panelClicked(){
-    $('.panel').click(function() {
+    $('.panel').click(function() { 
+      //flip out each panel that is NOT the chosen one  
+      $('.panel').not(this).each(function(){
+        $(this).addClass('animated flipOutY');
+      });
+      //go to destination but delay to let animations go
       var $destination = $(this).find('.hidden-destination').text();
-      window.location = $destination;
+      setTimeout(function(){window.location = $destination;},1500);
+  
     });
   }
 
   function hamburgerClicked() {
+    //clear BG image  
+    $('body').css('background','none');  
     //hide original nav and show overlay
-    $nav.add($cover).toggle();
-    $overlayNav.toggle();
+    $overlayNav.toggle().siblings().toggle();
     //flip each column panel and then show text
     $panels.toggle().addClass('animated flipInY');
     $panelTitles.delay(4000).toggle().addClass('animated fadeInDown');
