@@ -15,7 +15,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/welcome.css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="js/welcome.js"></script>
+        <script src="js/navOverlay.js"></script>
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
@@ -54,28 +54,32 @@ and open the template in the editor.
             </div>
             
             <div class="flex-overlay text-center">
-                <div class="overlay-flex-item-outer" id="home">
+                <div class="overlay-flex-item-outer panel" id="home">
                   <div class="overlay-flex-item-inner"> 
-                    <p class="titles"><a href="index.html">HOME</a></p>
+                    <p class="overlay titles">HOME</p>
                     <p class="hidden-description general-text">Going back already?</p>
+                    <p class="hidden-destination">index.html</p>
                   </div>
                 </div>
-                <div class="overlay-flex-item-outer" id="about">
+                <div class="overlay-flex-item-outer panel" id="about">
                   <div class="overlay-flex-item-inner"> 
-                    <p class="titles">ABOUT</p>
+                    <p class="overlay titles">ABOUT</p>
                     <p class="hidden-description general-text">Curious about me? Then I invite you to come sit with me, just click!</p>
+                    <p class="hidden-destination">about.html</p>
                   </div>
                 </div>
-                <div class="overlay-flex-item-outer" id="projects">
+                <div class="overlay-flex-item-outer panel" id="projects">
                   <div class="overlay-flex-item-inner">   
-                    <p class="titles">PROJECTS</p>
+                    <p class="overlay titles">PROJECTS</p>
                     <p class="hidden-description general-text">A collection. Academic and current, but only the best.</p>
+                    <p class="hidden-destination">projects.html</p>
                   </div>
                 </div>
-                <div class="overlay-flex-item-outer" id="contact">
+                <div class="overlay-flex-item-outer panel" id="contact">
                   <div class="overlay-flex-item-inner">   
-                    <p class="titles">CONTACT</p>
+                    <p class="overlay titles">CONTACT</p>
                     <p class="hidden-description general-text">I love connecting with others and getting feedback so chat with me!</p>
+                    <p class="hidden-destination">contact.html</p>
                   </div>
                 </div>
             </div>

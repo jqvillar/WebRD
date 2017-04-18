@@ -69,6 +69,10 @@ body{
   justify-content: center;
 }
 
+.overlay-flex-item-inner{
+    width: 100%;
+}
+
 /*Panel colors*/
 
 #home {

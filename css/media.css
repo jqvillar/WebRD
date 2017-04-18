@@ -19,11 +19,7 @@ and open the template in the editor.
     
     
     @media only screen and (min-width:1080px){/* styles for browsers larger than 1080px; */
-        /* NAVIGATION */
-        li{
-            margin-left: 5%;
-        }
-        
+ 
         /* WELCOME ELEMENTS*/
         
         .intro-container{
@@ -51,13 +47,10 @@ and open the template in the editor.
     }
 
     @media only screen and (min-width:1400px){/* styles for browsers larger than 1440px; */
-        /* NAVIGATION */
-        li{
-            margin-left: 5%;
+       /* OVERLAY - NAV*/
+        .overlay.titles{
+            font-size: 200%;
         }
-            li a{
-                font-size: 125%;
-            }
         
         /* WELCOME ELEMENTS */
         .intro-container{
