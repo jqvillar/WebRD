@@ -34,13 +34,12 @@ $(function() {
       //go to destination but delay to let animations go
       var $destination = $(this).find('.hidden-destination').text();
       setTimeout(function(){window.location = $destination;},1500);
-  
+      //fade out chosen
+      $(this).delay(1200).fadeOut();
     });
   }
 
-  function hamburgerClicked() {
-    //clear BG image  
-    $('body').css('background','none');  
+  function hamburgerClicked() { 
     //hide original nav and show overlay
     $overlayNav.toggle().siblings().toggle();
     //flip each column panel and then show text
