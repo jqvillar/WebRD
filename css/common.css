@@ -20,12 +20,32 @@ html,body {
         margin: 0;
     }
 
+.flex-main-container{
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 100vh;
+}    
+
+.flex-main-item{
+    width: 100%;
+    flex: auto;
+}
 /******************
     Navigation
 ******************/
 
 .flex-nav{
-    padding: 0;
+    padding: 1%;
     margin: 0;
     display: -webkit-box;
     display: -moz-box;
@@ -34,7 +54,7 @@ html,body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -56,6 +76,7 @@ html,body {
   justify-content: center;
   flex-wrap: nowrap;
   height: 100vh;
+  width: 100vw;
 }
 
 .overlay-flex-item-outer {
@@ -98,7 +119,6 @@ html,body {
 .titles{
     font-family: Century Gothic;
     font-weight: bold;
-    letter-spacing: 15px;
 }
 
 .general-text{

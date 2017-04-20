@@ -17,23 +17,4 @@ and open the template in the editor.
     z-index:-1;
     background: url(../images/WatercolorBG.png) no-repeat center center fixed;
 }
-
-#cover{
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
     
-}
-
-.flex-item{
-    width: 100vw;
-}
-

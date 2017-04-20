@@ -17,16 +17,16 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="js/navOverlay.js"></script>
         <script src="js/welcomeAnimation.js"></script>
-        
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="container-fluid">
-            <div id="welcome-bg"></div>
+        <div class="flex-main-container">
+            <div id="welcome-bg"></div><!--background image-->
             
-            <div class="flex-nav">
+            <div class="flex-nav flex-main-item">
               <div class="flex-nav-item text-center">
                 <svg id="logo" width="100px" height="130px" viewBox="0 0 150 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>Logo</title>
@@ -57,6 +57,19 @@ and open the template in the editor.
               </div>
             </div>
             
+            <div class="flex-main-item intro-container text-center">
+                <span class="titles" id="main">Janine Villareal</span><br />
+                <span class="general-text" id="aspiration">Aspiring UI/UX Designer</span>
+            </div>    
+                
+            <div class="flex-main-item social-icons text-center">
+                <a href="https://twitter.com/jqvillar"><img class="img-responsive" src="images/Twitter.png" alt="Twitter Icon"></a>
+                <a href="https://www.linkedin.com/in/janine-villareal/"><img class="img-responsive" src="images/Linkedin.png" alt="LinkedIn Icon"></a>
+                <a href="https://github.com/jqvillar"><img class="img-responsive" src="images/GitHub.png" alt="Github Icon"></a>
+                <a href="http://codepen.io/jqvillar/"><img class="img-responsive" src="images/Codepen.png" alt="Codepen Icon"></a>
+            </div> 
+            
+            <!-- OVERLAY -->
             <div class="flex-overlay text-center">
                 <div class="overlay-flex-item-outer panel" id="home">
                   <div class="overlay-flex-item-inner"> 
@@ -86,20 +99,6 @@ and open the template in the editor.
                     <p class="hidden-destination">contact.html</p>
                   </div>
                 </div>
-            </div>
-            
-            <div id="cover">
-                <div class="flex-item intro-container text-center">
-                    <span class="titles" id="main">Janine Villareal</span><br />
-                    <span class="general-text" id="aspiration">Aspiring UI/UX Designer</span>
-                </div>    
-                
-                <div class="flex-item social-icons text-center col-lg-12">
-                    <a href="https://twitter.com/jqvillar"><img class="img-responsive" src="images/Twitter.png" alt="Twitter Icon"></a>
-                    <a href="https://www.linkedin.com/in/janine-villareal/"><img class="img-responsive" src="images/Linkedin.png" alt="LinkedIn Icon"></a>
-                    <a href="https://github.com/jqvillar"><img class="img-responsive" src="images/GitHub.png" alt="Github Icon"></a>
-                    <a href="http://codepen.io/jqvillar/"><img class="img-responsive" src="images/Codepen.png" alt="Codepen Icon"></a>
-                </div> 
             </div>
             
         </div>
