@@ -13,10 +13,11 @@ $(function() {
   var $panels = $('#home, #about, #projects, #contact');
   var $panelTitles = $('#home .titles, #about .titles, #projects .titles, #contact .titles');
   var $hiddenDescription = $('.hidden-description');
-  var $hiddenDestination = $('.hidden-destination');
   
   /* Hide overlay on load */
-  $overlayNav.add($panels).add($panelTitles).add($hiddenDescription).add($hiddenDestination).toggle();
+  $overlayNav.add($panels).add($panelTitles).add($hiddenDescription).toggle();
+  /*Hide all hovered class*/
+  $panels.toggleClass('panel-hovered');
   
   /* Functions */
   function panelHover() {
@@ -32,7 +33,7 @@ $(function() {
         $(this).addClass('animated flipOutY');
       });
       //go to destination but delay to let animations go
-      var $destination = $(this).find('.hidden-destination').text();
+      var $destination = $(this).attr('data-panel-destination');
       setTimeout(function(){window.location = $destination;},1500);
       //fade out chosen
       $(this).delay(1200).fadeOut();

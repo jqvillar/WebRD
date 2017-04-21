@@ -97,21 +97,39 @@ html,body {
 
 /*Panel colors*/
 
-#home {
-  background-color: #FFA24E;
+#home{
+  background: #FFA24E;
 }
+
+#home:hover{
+  background: #FFA24E url(../images/HomePanelBG.png) no-repeat center center;
+  background-size: cover;
+}
+
+    #home .overlay-flex-item-inner{
+        background-color: #FFA24E;
+    }
 
 #about {
   background-color: #FE647E;
 }
+    #about .overlay-flex-item-inner{
+      background-color: #FE647E;
+    }
 
 #projects {
   background-color: #56BDD7;
 }
+    #projects .overlay-flex-item-inner{
+      background-color: #56BDD7;
+    }
 
 #contact {
   background-color: #52D7C2;
 }
+    #contact .overlay-flex-item-inner{
+      background-color: #52D7C2;
+    }
 
 /******************
        Text
