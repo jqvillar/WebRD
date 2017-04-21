@@ -99,6 +99,8 @@ html,body {
 
 #home{
   background: #FFA24E;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background 0.55s linear;
 }
 
 #home:hover{

@@ -16,8 +16,6 @@ $(function() {
   
   /* Hide overlay on load */
   $overlayNav.add($panels).add($panelTitles).add($hiddenDescription).toggle();
-  /*Hide all hovered class*/
-  $panels.toggleClass('panel-hovered');
   
   /* Functions */
   function panelHover() {
