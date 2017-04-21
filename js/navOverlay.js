@@ -50,8 +50,8 @@ $(function() {
     hamburgerClicked();
   });
   
- /* panel actions and behaviours */
- panelHover();
- panelClicked();
+  /* panel actions and behaviours */
+  panelHover();
+  panelClicked();
 
 });

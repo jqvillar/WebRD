@@ -99,13 +99,9 @@ html,body {
 
 #home{
   background: #FFA24E;
-  -webkit-transition: background-image 0.2s ease-in-out;
-  transition: background 0.55s linear;
 }
 
 #home:hover{
-  background: #FFA24E url(../images/HomePanelBG.png) no-repeat center center;
-  background-size: cover;
 }
 
     #home .overlay-flex-item-inner{
@@ -114,7 +110,15 @@ html,body {
 
 #about {
   background-color: #FE647E;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background 0.55s linear;
 }
+
+#about:hover{
+    background: #FE647E url(../images/HomePanelBG.png) no-repeat center center;
+    background-size: cover;
+}
+
     #about .overlay-flex-item-inner{
       background-color: #FE647E;
     }
@@ -122,12 +126,19 @@ html,body {
 #projects {
   background-color: #56BDD7;
 }
+
+#projects:hover{
+}
+
     #projects .overlay-flex-item-inner{
       background-color: #56BDD7;
     }
 
 #contact {
   background-color: #52D7C2;
+}
+
+#contact:hover{
 }
     #contact .overlay-flex-item-inner{
       background-color: #52D7C2;
