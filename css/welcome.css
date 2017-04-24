@@ -18,9 +18,7 @@ and open the template in the editor.
     background: url(../images/WatercolorBG3.png) no-repeat center center fixed;
 }
 
-<<<<<<< Updated upstream
-=======
-.flex-nav{
-    height: 20vh;
+#intro-container{
+    align-self: center;
+    height: 45vh;
 }
->>>>>>> Stashed changes

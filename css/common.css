@@ -40,7 +40,6 @@ html,body {
 }    
 .flex-main-item{
     width: 100%;
-    flex: auto;
 }
 /******************
     Navigation
