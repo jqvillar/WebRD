@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 24, 2017, 10:42:46 AM
+    Author     : Janine
+*/
+
+.flex-nav-item#hamburger{
+    width: 2.7vw;
+}
+.flex-nav-item#hello{
+    width:46vw;
+    margin-right: 2%;
+}
+
+#hello-text{
+    margin: 2%;
+    height: 90vh;
+    width: 50vw;
+    align-self: flex-end;
+    border-radius: 20px;
+    
+    -webkit-box-shadow: 20px 20px 60px -4px rgba(78,78,78,0.6);
+    -moz-box-shadow: 20px 20px 60px -4px rgba(78,78,78,0.6);
+    box-shadow: 20px 20px 60px -4px rgba(78,78,78,0.6);
+}
