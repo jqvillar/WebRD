@@ -8,6 +8,16 @@ and open the template in the editor.
     Author     : Janine
 */
 
+#about-bg{
+    height:100vh;
+    width:100vw;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index:-1;
+    background: url(../images/PpicPaint.png) no-repeat fixed;
+}
+
 .flex-nav-item#hamburger{
     width: 2.7vw;
 }
@@ -16,7 +26,7 @@ and open the template in the editor.
     margin-right: 2%;
 }
 
-#hello-text{
+#who-text{
     margin: 2%;
     height: 90vh;
     width: 50vw;
