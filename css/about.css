@@ -9,12 +9,10 @@ and open the template in the editor.
 */
 
 #about-bg{
-    width: 100vw;
     position: absolute;
     left: 0px;
     top: 0px;
     z-index:-1;
-    background: url(../images/PpicPaint.png) no-repeat fixed;
 }
 
 .flex-nav-item#hamburger{
