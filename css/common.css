@@ -112,7 +112,7 @@ html,body {
 #about {
   background-color: #FE647E;
   -webkit-transition: background-image 0.2s ease-in-out;
-  transition: background 0.55s linear;
+  transition: background 0.65s linear;
 }
 
 #about:hover{
