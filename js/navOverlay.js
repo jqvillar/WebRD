@@ -17,7 +17,15 @@ $(function() {
   /* Hide overlay on load */
   $overlayNav.add($panels).add($panelTitles).add($hiddenDescription).toggle();
   
-  /* Functions */
+  $hamburger.click(function() {
+    hamburgerClicked();
+  });
+  
+  /* panel actions and behaviours */
+  panelHover();
+  panelClicked();
+  
+   /* Functions */
   function panelHover() {
     $('.panel').hover(function() {
       $(this).find('.hidden-description').fadeToggle();
@@ -45,13 +53,5 @@ $(function() {
     $panels.toggle().addClass('animated flipInY');
     $panelTitles.delay(4000).toggle().addClass('animated fadeInDown');
   }
-  
-  $hamburger.click(function() {
-    hamburgerClicked();
-  });
-  
-  /* panel actions and behaviours */
-  panelHover();
-  panelClicked();
 
 });

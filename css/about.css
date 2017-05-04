@@ -8,35 +8,42 @@ and open the template in the editor.
     Author     : Janine
 */
 
-#about-bg{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index:-1;
+/* PHOTOS */
+#abt-pic{
+    -ms-transform: rotate(14deg); /* IE 9 */
+    -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */
+    transform: rotate(14deg);
 }
 
-.flex-nav-item#hamburger{
-    width: 2.7vw;
-}
-.flex-nav-item#hello{
-    width:46vw;
-    margin-right: 1.45%;
-}
-
+/* TEXT */
 #who-text{
-    margin: 2%;
-    padding: 1.5%;
-    height: 90vh;
-    width: 50vw;
-    align-self: flex-end;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    
-    -webkit-box-shadow: 20px 20px 60px -4px rgba(78,78,78,0.66);
-    -moz-box-shadow: 20px 20px 60px -4px rgba(78,78,78,0.6);
-    box-shadow: 20px 20px 60px -4px rgba(78,78,78,0.6);
+    align-self: center;
 }
 
-#who-text .general-text{
-    font-size: small;
+#love-ux{
+    width: 85vw;
+    align-self: center;
 }
+
+.flex-main-item.info-group{
+    padding: 0;
+    margin: 0;
+    width: 85vw;
+    align-self: center;
+}
+
+.flex-main-item #day-text{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+    #plan, #work, #relax{
+         padding: 0% 5% 5% 1%;
+    }

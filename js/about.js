@@ -6,14 +6,5 @@
 
 $(function(){
     
-    function calculateAboutBGHeight(){
-        $('#about-bg').css("height", $whoHeight);
-    }
-    
-    /*need to do this everytime window is resized*/
-    var $whoHeight = $('.flex-nav').outerHeight(true)  + $('.flex-main-item#who-text').outerHeight(true);
-    calculateAboutBGHeight();
-    
-    
 });
 

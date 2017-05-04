@@ -36,18 +36,19 @@ html,body {
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 100vw;
-    height: 100vh;
 }    
 .flex-main-item{
     width: 100%;
+    
+   // border: solid 2px #FE647E;
 }
 /******************
     Navigation
 ******************/
 
 .flex-nav{
-    padding: 1%;
     margin: 0;
+    padding: 0% 1.2% 0% 1.2%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -55,8 +56,8 @@ html,body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
 .flex-nav-item#logo{

@@ -21,12 +21,20 @@ and open the template in the editor.
         }
         
         .general-text#aspiration{
-            font-size: 4vh;
+            font-size: 3.5vh;
         }
         
         .social-icons a img{
             margin-left: 2%;
             margin-bottom: 1%;
+        }
+        
+        /*********************** 
+                 ABOUT 
+        ************************/
+        
+        #who-text .general-text{
+            font-size: small;
         }
     }
     
@@ -44,7 +52,7 @@ and open the template in the editor.
                  WELCOME 
         ************************/
         .titles#main{
-            font-size: 12vh;
+            font-size: 10.5vh;
         }
         
         /*********************** 
@@ -53,12 +61,23 @@ and open the template in the editor.
         .titles.overlay{
             font-size: 2.5vh;
         }
+        
+        /*********************** 
+                 ABOUT
+        ************************/
+        #who-text{
+            width: 50vw;
+        }
+        
     }
     
     @media only screen and (min-width:1080px){/* styles for browsers larger than 1080px; */
     }
     
     @media only screen and (min-width: 1024px){/* styles for browsers larger than 1024px; Ipad Pro*/
+        #who-text .general-text{
+            font-size: medium;
+        } 
     }
 
     @media only screen and (min-width:1400px){/* styles for browsers larger than 1440px; */
