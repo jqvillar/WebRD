@@ -8,7 +8,7 @@ $(function(){
     //cache DOM
     var $welcomeBG = $('#welcome-bg');
     var $nav = $('.flex-nav');
-    var $intro = $('.intro-container');
+    var $intro = $('#intro-container');
     var $socialIcons = $('.social-icons');
     
     $welcomeBG.add($nav).add($intro).add($socialIcons).toggle();
