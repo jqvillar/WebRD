@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : Apr 24, 2017, 10:42:46 AM
     Author     : Janine
 */
@@ -32,7 +32,7 @@ and open the template in the editor.
     align-self: center;
 }
 
-.flex-main-item #day-text{
+.flex-main-item .blocks{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -44,6 +44,6 @@ and open the template in the editor.
     flex-wrap: nowrap;
 }
 
-    #plan, #work, #relax{
-         padding: 0% 5% 5% 1%;
+    .block{
+         padding: 0% 2.5% 1% 2.5%;
     }

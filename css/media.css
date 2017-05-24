@@ -36,6 +36,8 @@ and open the template in the editor.
         #who-text .general-text{
             font-size: small;
         }
+       
+
     }
     
     @media only screen and (min-width: 768px){/* styles for browsers larger than 768px;(Ipad)*/
@@ -45,6 +47,8 @@ and open the template in the editor.
         .titles{
         letter-spacing: 15px;
         }
+        
+        
     }
     
     @media only screen and (min-width:960px){/*styles for browsers larger than 960px;*/   
