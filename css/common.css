@@ -147,8 +147,8 @@ html,body {
 /******************
        Text
 ******************/
-.titles{
-    font-family: Century Gothic;
+.titles, .post-sub-titles{
+    font-family: "Century Gothic";
     font-weight: bold;
     text-shadow: 0px 2px 2px #4A4A4A;
 }
@@ -162,4 +162,11 @@ html,body {
 ******************/
 .social-icons a img{
     display: inline;
+}
+
+/******************
+   Post styles
+******************/
+.post-item{
+  padding: 0% 20% 2% 20%;
 }

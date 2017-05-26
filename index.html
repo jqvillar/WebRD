@@ -9,23 +9,37 @@ and open the template in the editor.
         <title>Janine Villareal</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/media.css">
-        
+        <link rel="stylesheet" type="text/css" href="css/common.css" >
+        <link rel="stylesheet" type="text/css" href="css/media.css">
+
         <link rel="stylesheet" href="css/welcome.css">
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="js/navOverlay.js"></script>
-        <script src="js/welcomeAnimation.js"></script>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        /*Welcome Page Animation*/
+        $(function(){
+            //cache DOM
+            var $welcomeBG = $('#welcome-bg');
+            var $nav = $('.flex-nav');
+            var $intro = $('#intro-container');
+            var $socialIcons = $('.social-icons');
+
+            $welcomeBG.add($nav).add($intro).add($socialIcons).toggle();
+
+            $welcomeBG.add($intro).fadeIn(2000);
+            $nav.add($socialIcons).fadeIn(2500);
+        });
+        </script>
     </head>
     <body>
         <div class="flex-main-container">
             <div id="welcome-bg"></div><!--background image-->
-            
+
             <!-- TOP NAV -->
             <header class="flex-nav flex-main-item">
               <div class="flex-nav-item" id="logo">
@@ -41,7 +55,7 @@ and open the template in the editor.
                             </g>
                         </g>
                 </svg>
-              </div>  
+              </div>
               <div class="flex-nav-item" id="hamburger">
                 <svg width="39px" height="38px" viewBox="0 0 39 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>Hamburger</title>
@@ -57,47 +71,47 @@ and open the template in the editor.
                 </svg>
               </div>
             </header>
-            
+
             <div class="flex-main-item text-center" id="intro-container">
                 <span class="titles" id="main">Janine Villareal</span><br />
                 <span class="general-text" id="aspiration">Aspiring UX/UI Designer</span>
-            </div>    
-                
+            </div>
+
             <div class="flex-main-item social-icons text-center">
-                <a href="https://twitter.com/jqvillar"><img class="img-responsive" src="images/Twitter.png" alt="Twitter Icon"></a>
-                <a href="https://www.linkedin.com/in/janine-villareal/"><img class="img-responsive" src="images/Linkedin.png" alt="LinkedIn Icon"></a>
-                <a href="https://github.com/jqvillar"><img class="img-responsive" src="images/GitHub.png" alt="Github Icon"></a>
-                <a href="http://codepen.io/jqvillar/"><img class="img-responsive" src="images/Codepen.png" alt="Codepen Icon"></a>
-            </div> 
-            
+                <a href="https://twitter.com/jqvillar"><img class="img-fluid" src="images/Twitter.png" alt="Twitter Icon"></a>
+                <a href="https://www.linkedin.com/in/janine-villareal/"><img class="img-fluid" src="images/Linkedin.png" alt="LinkedIn Icon"></a>
+                <a href="https://github.com/jqvillar"><img class="img-fluid" src="images/GitHub.png" alt="Github Icon"></a>
+                <a href="http://codepen.io/jqvillar/"><img class="img-fluid" src="images/Codepen.png" alt="Codepen Icon"></a>
+            </div>
+
             <!-- OVERLAY -->
             <div class="flex-overlay text-center">
                 <div class="overlay-flex-item-outer panel" id="home" data-panel-destination="index.html">
-                  <div class="overlay-flex-item-inner"> 
+                  <div class="overlay-flex-item-inner">
                     <p class="overlay titles">HOME</p>
                     <p class="hidden-description general-text" >Going back already?</p>
                   </div>
                 </div>
                 <div class="overlay-flex-item-outer panel" id="about" data-panel-destination="about.html">
-                  <div class="overlay-flex-item-inner"> 
+                  <div class="overlay-flex-item-inner">
                     <p class="overlay titles">ABOUT</p>
                     <p class="hidden-description general-text">Curious? I invite you to a seat and get to know me!</p>
                   </div>
                 </div>
                 <div class="overlay-flex-item-outer panel" id="projects" data-panel-destination="projects.html">
-                  <div class="overlay-flex-item-inner">   
+                  <div class="overlay-flex-item-inner">
                     <p class="overlay titles">PROJECTS</p>
                     <p class="hidden-description general-text">A collection. Academic and current, but only the best.</p>
                   </div>
                 </div>
                 <div class="overlay-flex-item-outer panel" id="contact" data-panel-destination="contact.html">
-                  <div class="overlay-flex-item-inner">   
+                  <div class="overlay-flex-item-inner">
                     <p class="overlay titles">CONTACT</p>
                     <p class="hidden-description general-text">I love connecting with others and getting feedback!</p>
                   </div>
                 </div>
             </div>
-            
+
         </div>
     </body>
 </html>
